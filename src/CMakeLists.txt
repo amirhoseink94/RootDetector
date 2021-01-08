@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( DisplayImage )
+find_package( OpenCV REQUIRED )
+add_executable( RootProcessor Main.cpp RootProcessor_F1.cpp RootProcessor_F2.cpp RootProcessor_F3.cpp RootProcessor_F4.cpp Counter.cpp)
+target_link_libraries( RootProcessor ${OpenCV_LIBS} )
